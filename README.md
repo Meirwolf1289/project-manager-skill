@@ -4,13 +4,24 @@ A comprehensive project management skill for AI coding assistants. Provides spri
 
 ## Installation
 
-### Claude Code
+### Claude Code (Plugin — recommended)
 ```bash
-cp -r project-manager ~/.claude/skills/
+claude marketplace add https://github.com/Meirwolf1289/project-manager-skill.git
+claude plugin install project-manager
 ```
 
-### Claude.ai
-Add the `SKILL.md` contents to your project knowledge, or paste it into the conversation.
+### Claude Code (Manual)
+```bash
+git clone https://github.com/Meirwolf1289/project-manager-skill.git /tmp/pm-skill
+cp -r /tmp/pm-skill/.claude/skills/project-manager ~/.claude/skills/
+```
+
+### Cowork / Claude.ai
+```bash
+claude marketplace add https://github.com/Meirwolf1289/project-manager-skill.git
+claude plugin install project-manager
+```
+Or add the `SKILL.md` contents to your project knowledge.
 
 ## What's Included
 
